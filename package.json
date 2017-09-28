@@ -1,0 +1,22 @@
+{
+  "name": "selfportrait2017",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "aframe": "^0.5.0",
+    "aframe-chromakey-material": "^1.1.1",
+    "aframe-react": "^4.2.3",
+    "react": "^15.5.4",
+    "react-dom": "^15.5.4",
+    "react-html5-fullscreen": "^0.0.2"
+  },
+  "devDependencies": {
+    "react-scripts": "0.9.5"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test --env=jsdom",
+    "eject": "react-scripts eject"
+  }
+}
