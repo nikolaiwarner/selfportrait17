@@ -66,6 +66,10 @@ class App extends Component {
   }
 
   componentDidMount () {
+    this.playVideo()
+  }
+
+  playVideo () {
     document.querySelectorAll('video').forEach((video) => { video.play() })
   }
 
@@ -114,7 +118,7 @@ class App extends Component {
 
   render () {
     return (
-      <div>
+      <div onClick={this.playVideo}>
         <Scene
           embedded
           vr-mode-ui='enabled: false'
@@ -122,7 +126,7 @@ class App extends Component {
         >
           <a-assets>
             {this.state.videos.map((item) => (
-              <video key={item.id} autoPlay className={'video'} id={item.id} loop src={item.src} />
+              <video key={item.id} autoPlay muted playsinline className={'video'} id={item.id} loop src={item.src} />
             ))}
           </a-assets>
           <a-sky color="#00FF00"></a-sky>
