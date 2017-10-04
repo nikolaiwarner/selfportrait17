@@ -1,0 +1,30 @@
+{
+    "name": "selfportrait17",
+    "displayName": "selfportrait17",
+    "version": "1.0.0",
+    "description": "selfportrait17",
+    "main": "index.js",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "author": "Nick Warner",
+    "license": "Apache-2.0",
+    "dependencies": {
+        "cordova-android": "^6.2.3",
+        "cordova-browser": "^4.1.0",
+        "cordova-custom-config": "^4.0.2",
+        "cordova-plugin-statusbar": "^2.2.3",
+        "cordova-plugin-whitelist": "^1.3.2"
+    },
+    "cordova": {
+        "plugins": {
+            "cordova-plugin-whitelist": {},
+            "cordova-plugin-statusbar": {},
+            "cordova-custom-config": {}
+        },
+        "platforms": [
+            "android",
+            "browser"
+        ]
+    }
+}
