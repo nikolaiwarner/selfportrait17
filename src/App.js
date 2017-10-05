@@ -129,6 +129,7 @@ class App extends Component {
               <video key={item.id} autoPlay muted playsinline className={'video'} id={item.id} loop src={item.src} />
             ))}
           </a-assets>
+          <a-entity camera></a-entity>
           <a-sky color="#00FF00"></a-sky>
           {this.state.items.map((item) => (
             <a-entity
